@@ -5,7 +5,7 @@ package questions;
 public class q_007 {
 
 	public static void main(String[] args) {
-		System.out.println("C:\\Download\\hello.cpp");
+		System.out.println('"'+"C:\\Download\\hello.cpp"+'"');
 	}
 
 }
