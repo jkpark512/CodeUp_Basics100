@@ -18,3 +18,6 @@ public class q_012 {
 	}
 
 }
+
+// String.format("%.6f", a) 
+// 위의 라인을 다시 볼 것.
