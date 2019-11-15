@@ -10,7 +10,7 @@ public class q_024 {
 		
 		String inputVoca;
 		int VocaLength;
-		String[] array;
+		char[] array = null;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -18,9 +18,12 @@ public class q_024 {
 		VocaLength = inputVoca.length();
 		
 		for(int i=0; i<VocaLength; i++) {
-			array = inputVoca.charAt(i);
+			array = inputVoca.toCharArray();
 		}
-
+		
+		for(int i=0; i<VocaLength; i++) {
+			System.out.println("'"+array[i]+"'");
+		}
 	}
 
 }
