@@ -14,20 +14,43 @@ public class q_025 {
 		inputValue = sc.nextInt();
 		
 		int ans;
-		int[] rem = null;
-		int[] disp = null;
+		int[] rem = {0,0,0,0,0};
+		int[] disp = {0,0,0,0,0};
 		
 		for(int i=0; i<5; i++) {
 			
 			ans = inputValue/10;
 			rem[i] = inputValue%10;
-			disp[i] = rem[i]*(10^(i-1));
+			disp[i] = (int) (rem[i]*Math.pow(10, i));
+			inputValue = ans;
 			
 		} 
 		
-		for(int i=4; i<0; i--) {
+		for(int i=4; i>=0; i--) {
 			System.out.println("["+disp[i]+"]");
 		}
 	}
 
 }
+
+/*
+	int[] rem = null;
+	int[] disp = null;
+	
+	int[] rem = {0,0,0,0,0};
+	int[] disp = {0,0,0,0,0};
+	
+	위를 아래와 같이 바꾸니 NullPointerException 에러가 사라졌다. 
+	
+	이유를 알아보도록 하자. 
+	
+	+
+	
+	disp[i] = rem[i]*Math.pow(10, i);
+	
+	disp[i] = (int) (rem[i]*Math.pow(10, i));
+	
+	위를 아래와 같이 바꾸니 에러가 사라졌다. 
+	
+	이유를 알아보도록 하자. 
+*/
