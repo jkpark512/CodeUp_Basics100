@@ -2,6 +2,8 @@
 
 package questions;
 
+import java.util.Scanner;
+
 public class q_071 {
 
 	public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class q_071 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		
+		while(array)
 	}
 
 }
