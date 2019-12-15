@@ -14,7 +14,7 @@ public class q_039 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		input1 = sc.nextLong()
+		input1 = sc.nextLong();
 		input2 = sc.nextLong();
 		
 		output = input1+input2;
