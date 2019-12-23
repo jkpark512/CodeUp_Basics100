@@ -9,14 +9,17 @@ public class q_053 {
 	public static void main(String[] args) {
 		
 		int input;
-		int output;
 		
 		Scanner sc = new Scanner(System.in);
 		
 		input = sc.nextInt();
-		output = !input;
 		
-		System.out.println();
+		boolean intToBool = !(input==1);
+		
+		int boolToInt = (intToBool)? 1:0;
+		
+		System.out.println(boolToInt);
+		
 	}
 
 }
